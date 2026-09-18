@@ -1,0 +1,1 @@
+import { ArrowUpRight } from 'lucide-react'; export function FinalCTA(){return <section id="contato" className="final-cta"><div className="eyebrow">Seu próximo capítulo começa aqui</div><h2>Vamos criar algo<br/><i>impossível</i> de ignorar?</h2><a href="mailto:ola@rotesolution.com" className="cta-button">Começar uma conversa <ArrowUpRight/></a></section>}

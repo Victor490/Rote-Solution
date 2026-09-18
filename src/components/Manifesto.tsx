@@ -1,0 +1,1 @@
+export function Manifesto(){return <section id="sobre" className="manifesto"><p className="eyebrow">Um pouco da nossa visão</p><blockquote>“Acreditamos que as melhores experiências digitais não pedem atenção. <i>Elas merecem.</i>”</blockquote><div className="manifesto-sign">ROTE<br/><span>SOLUTION</span></div></section>}
