@@ -55,3 +55,26 @@ button,a{-webkit-tap-highlight-color:transparent}
   .case-copy{padding:32px 22px}.case-copy h3{font-size:clamp(32px,10vw,38px)}.case-description{font-size:13px}.case-result{padding-top:34px}.site-showcase{height:min(108vw,420px)}.browser-bar{height:36px;padding:0 10px}.browser-bar span{margin-left:6px;padding:6px 8px}.site-frame{inset:36px 0 0}.site-frame img{object-position:top center}
   footer{padding-bottom:calc(30px + env(safe-area-inset-bottom))}footer>div:nth-child(2){flex-direction:column;gap:12px}
 }
+
+/* Keep the customer journey visible on phones without competing with the headline. */
+@media(max-width:700px){
+  .hero-flow{justify-content:flex-start;gap:0}
+  .hero-flow .hero-eyebrow{order:1}
+  .hero-flow .reveal-title{order:2}
+  .hero-flow .digital-flow{position:relative;order:3;top:auto;right:auto;width:100%;height:108px;margin:6px 0 18px;transform:none;transform-origin:initial;opacity:1;overflow:visible}
+  .hero-flow .hero-bottom{order:4;margin-top:auto}
+  .hero-flow .flow-line{left:7%;right:7%;top:50px;bottom:auto;width:auto;height:1px;background:linear-gradient(90deg,#76add800,#76add8 12%,#76add8 88%,#76add800)}
+  .hero-flow .flow-line i{top:-3px;left:0}
+  .hero-flow .flow-line i:nth-child(2){top:-3px;left:33.333%}
+  .hero-flow .flow-line i:nth-child(3){top:-3px;left:66.666%}
+  .hero-flow .flow-line i:nth-child(4){top:-3px;left:100%}
+  .hero-flow .flow-card{top:20px;left:auto;width:calc(25% - 6px);min-height:64px;gap:4px;justify-content:center;align-items:center;padding:7px 4px;box-shadow:5px 7px 16px #08101b55;transform:none;animation-duration:4.6s}
+  .hero-flow .flow-card svg,.hero-flow .flow-brand{width:16px;height:16px;flex:0 0 16px;font-size:16px}
+  .hero-flow .flow-card>span:not(.flow-brand){display:block;min-width:0;text-align:center}
+  .hero-flow .flow-card b{display:block;font-size:8px;line-height:1.12}
+  .hero-flow .flow-card small,.hero-flow .flow-arrow,.hero-flow .flow-status{display:none}
+  .hero-flow .flow-search{left:0;animation-delay:0}
+  .hero-flow .flow-site{left:calc(25% + 2px);animation-delay:-1.15s}
+  .hero-flow .flow-chat{left:calc(50% + 2px);animation-delay:-2.3s}
+  .hero-flow .flow-sale{left:calc(75% + 2px);animation-delay:-3.45s}
+}
